@@ -57,15 +57,16 @@ export const makeMove = (game: Game, position: number): {game: Game, error: Tack
             game,
             error: getCellResult.error
         };
-    } else if (getCellResult.cell !== null) {
-        return {
-            game,
-            error: TackyError.CellOccupied
-        };
     } else if (game.state !== GameState.InProgress) {
         return {
             game,
             error: TackyError.GameEnded
+        };
+    }
+    else if (getCellResult.cell !== null) {
+        return {
+            game,
+            error: TackyError.CellOccupied
         };
     }
     
@@ -74,7 +75,7 @@ export const makeMove = (game: Game, position: number): {game: Game, error: Tack
     const startingPlayer = game.startingPlayer;
     const currentPlayer = game.currentPlayer === 'x' ? 'o' : 'x';
     const {state, winningLine} = computeGameState(board);
-
+    
     const newGame: Game = {
         board,
         moveHistory,
@@ -97,7 +98,7 @@ const fromHistoryR = (history: number[], game: Game): {game: Game, error: TackyE
             error: null
         };
     }
-
+    
     const {game: newGame, error} = makeMove(game, history[0]);
     if (error) {
         return {
@@ -105,7 +106,7 @@ const fromHistoryR = (history: number[], game: Game): {game: Game, error: TackyE
             error
         };
     }
-
+    
     return fromHistoryR(history.slice(1), newGame);
 }
 
