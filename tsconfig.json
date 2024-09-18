@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
-        "module": "ESNext",
+        "module": "AMD",
         "target": "ESNext",
         "strict": true,
         "declaration": true,
-        "outDir": "dist",
         "strictNullChecks": true,
+        "outFile": "dist/index.js"
     }
 }
