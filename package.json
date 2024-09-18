@@ -13,7 +13,7 @@
     "url": "git+https://github.com/asebexen/tacky.git"
   },
   "author": "Arden Sebexen",
-  "license": "ISC",
+  "license": "GPL-3.0-only",
   "bugs": {
     "url": "https://github.com/asebexen/tacky/issues"
   },
