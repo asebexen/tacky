@@ -3,6 +3,7 @@ Tacky is a lightweight, functional library built to help you (yes, you!) write T
 Tacky makes it simple to interact with a Tic-Tac-Toe instance without complicated validation logic.  
 ## How to Use
 To include Tacky in your project, install with `npm i @asebexen/tacky`  
+A full demo of Tacky in React can be found [here](https://spontaneous-sundae-ae1826.netlify.app/). ([Repository](https://github.com/asebexen/tacky-reacky))
 Tacky exposes only a few functions, but they're all mega powerful!
 ```typescript
 import * as tacky from '@asebexen/tacky';
