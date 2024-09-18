@@ -58,5 +58,5 @@ By gracefully reporting errors in the `error` field, Tacky is flexible and unopi
 ## License
 Tacky is licensed under the GNU GPLv3. If this is a royal pain in your arse, write to me and we can work it out. :3
 ## Contact
-Email all inquiries to asebexen@gmail.com
+Email all inquiries to asebexen@gmail.com  
 If you used Tacky in a project, feel free to let me know! I'd actually be quite flattered to hear from you lmao.
