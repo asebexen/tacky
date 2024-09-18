@@ -5,6 +5,7 @@
         "strict": true,
         "declaration": true,
         "strictNullChecks": true,
+        "outDir": "dist",
         "outFile": "dist/index.js"
-    }
+    },
 }
